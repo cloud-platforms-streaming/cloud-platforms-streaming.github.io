@@ -1,8 +1,8 @@
-## OpenShift Streaming
-
-### Red Hat OpenShift: The Kubernetes platform for big ideas
+# OpenShift Streaming
 
 Documentation, assets, and more related to streaming
+
+### Red Hat OpenShift: The Kubernetes platform for big ideas
 
 [**Red Hat OpenShift Twitch**](https://www.twitch.tv/redhatopenshift)
 
