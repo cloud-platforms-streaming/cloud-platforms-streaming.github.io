@@ -1,12 +1,24 @@
-## OpenShift Streaming
-
-### Red Hat OpenShift: The Kubernetes platform for big ideas
+# OpenShift Streaming
 
 Documentation, assets, and more related to streaming
 
+### Red Hat OpenShift: The Kubernetes platform for big ideas
+
 [**Red Hat OpenShift Twitch**](https://www.twitch.tv/redhatopenshift)
 
-<iframe src="https://player.twitch.tv/?channel=redhatopenshift&parent=www.example.com"></iframe>
+<!-- Add a placeholder for the Twitch embed -->
+<div id="twitch-embed"></div>
+
+<!-- Load the Twitch embed script -->
+<script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+<!-- Create a Twitch.Embed object. This will render within the placeholder div -->
+<script type="text/javascript">
+  new Twitch.Embed("twitch-embed", {
+    channel: "redhatopenshift",
+    layout: "video",
+  });
+</script>
 
 [**Red Hat Streaming Calendar**](https://red.ht/streamcal)
 
