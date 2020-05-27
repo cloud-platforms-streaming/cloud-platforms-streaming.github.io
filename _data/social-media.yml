@@ -1,23 +1,23 @@
 twitter:
   id: 'openshift'
-  href: 'https://www.twitter.com/openshift/'
+  href: 'https://www.twitter.com/'
   title: 'Twitter'
-  fa-icon: 'fa-twitter-square'
+  fa-icon: 'fa-twitter'
 
 twitch:
   id: 'openshift'
-  href: 'https://twitch.tv/openshift'
+  href: 'https://twitch.tv/'
   title: 'Twitch'
-  fa-icon: 'fa-twitch-square'
+  fa-icon: 'fa-twitch'
 
 youtube:
   id: 'rhopenshift'
-  href: 'https://www.youtube.com/user/rhopenshift'
+  href: 'https://www.youtube.com/user/'
   title: 'YouTube'
-  fa-icon: 'fa-youtube-square'
+  fa-icon: 'fa-youtube'
 
 facebook:
   id: 'openshift'
-  href: 'https://www.facebook.com/openshift/'
+  href: 'https://www.facebook.com/'
   title: 'Facebook'
-  fa-icon: 'fa-facebook-square'
+  fa-icon: 'fa-facebook'
