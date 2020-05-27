@@ -1,0 +1,23 @@
+twitter:
+  id: 'openshift'
+  href: 'https://www.twitter.com/openshift/'
+  title: 'Twitter'
+  fa-icon: 'fa-twitter-square'
+
+twitch:
+  id: 'openshift'
+  href: 'https://twitch.tv/openshift'
+  title: 'Twitch'
+  fa-icon: 'fa-twitch-square'
+
+youtube:
+  id: 'rhopenshift'
+  href: 'https://www.youtube.com/user/rhopenshift'
+  title: 'YouTube'
+  fa-icon: 'fa-youtube-square'
+
+facebook:
+  id: 'openshift'
+  href: 'https://www.facebook.com/openshift/'
+  title: 'Facebook'
+  fa-icon: 'fa-facebook-square'
