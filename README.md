@@ -10,11 +10,11 @@ If you have questions, please review the [FAQ](https://red.ht/streamfaq)
 
 Want to get on the stream and hack on some fun Red Hat OpenShift, OpenShift adjacent, or related upstream projects? Fill out the appropriate submission form and we'll be in touch.
 
-OpenShift Twitch Stream Topic Proposal Form: https://red.ht/streamform (Red Hat employees only)
+OpenShift Twitch Stream Topic Proposal Form: [https://red.ht/streamform](https://red.ht/streamform) (Red Hat employees only)
 
-OpenShift Twitch Public Feedback Form: https://red.ht/stream-feedback (public, partners, customers, etc.)
+OpenShift Twitch Public Feedback Form: [https://red.ht/stream-feedback](https://red.ht/stream-feedback) (public, partners, customers, etc.)
 
-Please read (and contribute to) the documentation: https://github.com/cloud-platforms-streaming/streaming-docs
+Please read (and contribute to) the documentation: [https://github.com/cloud-platforms-streaming/streaming-docs](https://github.com/cloud-platforms-streaming/streaming-docs)
 
 ## [Red Hat OpenShift Twitch](https://www.twitch.tv/redhatopenshift)
 
