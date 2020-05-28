@@ -30,11 +30,15 @@ Please follow us on Twitch!
 <script type="text/javascript">
   new Twitch.Embed("twitch-embed", {
     width: 800,
-    height: 600,
+    height: 450,
     channel: "redhatopenshift",
     layout: "video",
   });
 </script>
+
+## [Red Hat OpenShift YouTube](https://www.youtube.com/c/OpenShift/live)
+
+<iframe width="800" height="450" src="https://www.youtube-nocookie.com/embed/_1N4xYd3nQE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## [Red Hat Streaming Calendar](https://red.ht/streamcal)
 
