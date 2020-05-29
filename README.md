@@ -18,7 +18,7 @@ Please read (and contribute to) the documentation: [https://github.com/cloud-pla
 
 ## [Red Hat OpenShift Twitch](https://www.twitch.tv/redhatopenshift)
 
-Please follow us on Twitch!
+Please follow us on Twitch! If we're broadcasting live, you'll see it below:
 
 <!-- Add a placeholder for the Twitch embed -->
 <div id="twitch-embed"></div>
@@ -37,6 +37,9 @@ Please follow us on Twitch!
 </script>
 
 ## [Red Hat OpenShift YouTube](https://www.youtube.com/c/OpenShift/live)
+You can find all our archived video content in the [OpenShift YouTube
+Channel](https://youtube.com/rhopenshift). This includes Twitch streams, as
+well! If we're broadcasting live, you'll see it below:
 
 <iframe width="800" height="450" src="https://www.youtube-nocookie.com/embed/_1N4xYd3nQE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
