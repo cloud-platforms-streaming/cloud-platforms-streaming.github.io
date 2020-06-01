@@ -51,6 +51,8 @@ Note: Click the + in the bottom right of the Google Calender to add to your own 
 
 ### Red Hat OpenShift: The Kubernetes platform for big ideas
 
+Want your own Call to Action (CTA) in our rotation? The [template for these banners](https://github.com/cloud-platforms-streaming/streaming-tools/blob/master/obs/assets/openshift-banners.xcf) is available for modification. Submit a Pull Request with your new CTA asset and additional information about the campaign.
+
 [![DO101 Free!](https://github.com/cloud-platforms-streaming/streaming-tools/raw/master/obs/assets/free-do101.png)](https://red.ht/DO101Free)
 
 [![learn.openshift.com](https://github.com/cloud-platforms-streaming/streaming-tools/raw/master/obs/assets/learn-openshift-banner.png)](https://learn.openshift.com)
