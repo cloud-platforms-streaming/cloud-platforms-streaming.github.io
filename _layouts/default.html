@@ -1,74 +1,257 @@
-<!doctype html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
+<!DOCTYPE html>
+<!--[if IE 8]> <html class="ie8"> <![endif]-->
+<!--[if IE 9]> <html class="ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html>
+<!--<![endif]-->
+
+<head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="description" content="openshift.tv">
+    <meta name="author" content="Red Hat OpenShift">
+    <link rel="canonical" href="https://openshift.tv">
+    <title>openshift.tv</title>
 
-{% seo %}
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1 class="header">{{ site.title | default: site.github.repository_name }}</h1>
-        <p class="header">{{ site.description | default: site.github.project_tagline }}</p>
+    <link href="https://assets.openshift.net/content/subdomain.css" rel="stylesheet" type="text/css">
+    <link href="https://docs.openshift.com/container-platform/4.1/_stylesheets/docs.css" rel="stylesheet" />
+    <link href="https://docs.openshift.com/container-platform/4.1/_stylesheets/search.css" rel="stylesheet" />
+    <link href="https://assets.openshift.net/content/subdomain/touch-icon-precomposed.png" rel="apple-touch-icon-precomposed" type="image/png">
+    <link href="https://assets.openshift.net/content/subdomain/favicon32x32.png" rel="shortcut icon" type="text/css">
+    <link href="https://assets.openshift.net/content/osh-nav-footer.css" rel="stylesheet" type="text/css" media="screen, print" />
+    <!--[if IE]><link rel="shortcut icon" href="https://assets.openshift.net/content/subdomain/favicon.ico"><![endif]-->
+    <!-- or, set /favicon.ico for IE10 win -->
+    <meta content="OpenShift" name="application-name">
+    <meta content="#000000" name="msapplication-TileColor">
+    <meta content="https://assets.openshift.net/content/subdomain/touch-icon-precomposed.png" name="msapplication-TileImage">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
 
-        <ul>
-          {% if site.show_downloads %}
-            <li class="download"><a class="buttons" href="{{ site.github.zip_url }}">Download ZIP</a></li>
-            <li class="download"><a class="buttons" href="{{ site.github.tar_url }}">Download TAR</a></li>
-          {% endif %}
-          <!-- <li><a class="buttons github" href="{{ site.github.repository_url }}">View On GitHub</a></li> -->
-        </ul>
+    <script src="js/jquery-2.1.1.min.js" defer></script>
+    <script src="js/modernizr-2.8.3.min.js" defer></script>
+</head>
 
-        {% if site.github.is_project_page %}
-          <p class="header">This project is maintained by <a class="header name" href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
+<body>
+    <!-- Adobe DTM -->
+    <script id="dpal" src="//www.redhat.com/ma/dpal.js" type="text/javascript"></script>
+    <!-- End Adobe DTM -->
+    <script>
+        var base_url = '{{ base_url }}';
+    </script>
 
-        {% if site.github.is_user_page %}
-          <ul>
-            <li><a class="buttons github" href="{{ site.github.owner_url }}">GitHub Profile</a></li>
-          </ul>
-        {% endif %}
+    <!-- BEGIN TOPNAV.HTML -->
+    <nav id="main">
+        <div class="container">
+            <div class="row">
+                <div class="navbar navbar-default navbar-openshift" role="navigation">
+                    <div class="navbar-header">
+                        <a href="#nav-main" class="dropdown-toggle navbar-menu-toggle hidden visible-xs" data-toggle="collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+                        <a class="navbar-brand" href="/"></a>
+                    </div>
+                    <div id="nav-main" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li id="products" class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                  Products <span class="fa fa-angle-down"></span>
+                </a>
+                                <div class="dropdown-menu">
+                                    <div class="row flex-column flex-md-row">
+                                        <div class="col-xs-12 col-sm-3">
+                                            <h3>Overview</h3>
+                                            <ul class="nav flex-column">
+                                                <li><a target="_blank" href="https://www.openshift.com/products/features/">Features</a></li>
+                                                <li><a target="_blank" href="https://www.openshift.com/products/pricing/">Pricing</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-9">
+                                            <h3>Featured Products</h3>
+                                            <ul class="nav">
+                                                <li>
+                                                    <a target="_blank" href="https://www.openshift.com/products/container-platform/">Red Hat OpenShift Container&nbsp;Platform</a>
+                                                    <p class="d-none d-md-block">Build, deploy and manage your applications across cloud- and on-premise infrastructure</p>
+                                                </li>
+                                                <li>
+                                                    <a target="_blank" href="https://www.openshift.com/products/dedicated/">Red Hat OpenShift Dedicated</a>
+                                                    <p class="d-none d-md-block">Single-tenant, high-availability Kubernetes clusters in the public cloud</p>
+                                                </li>
 
-<!-- BEGIN CUSTOM CONTENT -->
+                                                <li>
+                                                    <a target="_blank" href="https://www.openshift.com/products/online/">Red Hat OpenShift Online</a>
+                                                    <p class="d-none d-md-block">The fastest way for developers to build, host and scale applications in the public cloud</p>
+                                                </li>
 
-<!-- SOCIAL MEDIA Doc: https://jreel.github.io/social-media-icons-on-jekyll/ -->
-<a href="https://twitch.tv/redhatopenshift"><i class="fab fa-twitch fa-2x"></i></a> 
-<a href="https://www.youtube.com/rhopenshift"><i class="fab fa-youtube fa-2x"></i></a> 
-<a href="https://www.linkedin.com/company/red-hat/"><i class="fab fa-linkedin fa-2x"></i></a> 
-<a href="https://www.facebook.com/openshift/"><i class="fab fa-facebook fa-2x"></i></a>
-<!-- END SOCIAL MEDIA -->
+                                                <li class="nav-item">
+                                                    <a target="_blank" href="https://www.openshift.com/products/">All products <span class="fa fa-angle-right"></span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
 
-<!-- END CUSTOM CONTENT -->
+                            <li id="learn" class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  Learn <span class="fa fa-angle-down"></span>
+                </a>
+                                <div class="dropdown-menu">
+                                    <div class="row flex-md-nowrap">
+                                        <div class="col-xs-12 col-sm-6">
+                                            <h3>Learn</h3>
+                                            <ul class="nav">
+                                                <li><a target="_blank" href="https://www.openshift.com/learn/what-is-openshift/">What is OpenShift</a></li>
+                                                <li><a target="_blank" href="https://www.openshift.com/learn/get-started/">Get started</a></li>
+                                                <li><a target="_blank" href="https://www.openshift.com/learn/partners/">Partners</a></li>
+                                                <li><a target="_blank" href="https://www.openshift.com/learn/success-stories/">Customer success stories</a></li>
+                                                <li><a target="_blank" href="https://blog.openshift.com">Blog</a></li>
+                                                <li><a target="_blank" href="https://www.openshift.com/learn/resources/">Resources</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6">
+                                            <h3>Technology Topics</h3>
+                                            <ul class="nav">
+                                                <li><a target="_blank" href="https://www.openshift.com/learn/topics/knative/">Knative</a></li>
+                                                <li><a target="_blank" href="https://www.openshift.com/learn/topics/security/">Security</a></li>
+                                                <li><a target="_blank" href="https://www.openshift.com/learn/topics/kubernetes/">Kubernetes</a></li>
+                                                <li><a target="_blank" href="https://www.openshift.com/learn/topics/service-brokers/">Service Brokers</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  Community <span class="fa fa-angle-down"></span>
+                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a target="_blank" href="https://commons.openshift.org">OpenShift Commons</a></li>
+                                    <li><a target="_blank" href="https://www.okd.io">Open Source (OKD)</a></li>
+                                    <li><a target="_blank" href="https://www.openshift.com/community/programs/startups/">Startups</a></li>
+                                    <li><a target="_blank" href="https://www.openshift.com/community/programs/grants/">Grants</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  Support <span class="fa fa-angle-down"></span>
+                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a target="_blank" href="https://help.openshift.com">Help Center</a></li>
+                                    <li><a href="https://docs.openshift.com">OpenShift Docs</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a target="_blank" class="nav-sign-up" href="https://www.openshift.com/trial/">Free Trial</a></li>
+
+                            <li><a target="_blank" href="https://manage.openshift.com" class="nav-sign-in">Log In <span class="fa fa-angle-right"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END TOPNAV.HTML -->
+
+    <div class="container">
+        <p class="toggle-nav visible-xs pull-left">
+            <button class="btn btn-default btn-sm" type="button" data-toggle="offcanvas">Toggle nav</button>
+        </p>
 
 
-      </header>
+        <div class="col-xs-12 col-sm-9 col-md-9 main">
+            <div class="page-header">
 
-      <section>
-        {{ content }}
-      </section>
+                <h1 id="red-hat-openshift-streaming">Red Hat OpenShift Streaming</h1>
+                <h2 id="why">Why?</h2>
+                <p>Why live streaming? The COVID-19 pandemic has affected almost every event on the planet. We need a better way to connect to customers, partners, contributors, and communities. We have the capability to meet people where they are on
+                    <a href="https://www.youtube.com/rhopenshift">YouTube</a>, <a href="https://www.facebook.com/openshift/">Facebook</a>, or <a href="https://www.twitch.tv/redhatopenshift">Twitch</a>.</p>
+                <p>If you have questions, please review the <a href="https://red.ht/streamfaq">FAQ</a></p>
+                <h2 id="how">How?</h2>
+                <p>Want to get on the stream and hack on some fun Red Hat OpenShift, OpenShift adjacent, or related upstream projects? Fill out the appropriate submission form and we&#39;ll be in touch.</p>
+                <p>OpenShift Twitch Stream Topic Proposal Form: <a href="https://red.ht/streamform">https://red.ht/streamform</a> (Red Hat employees only)</p>
+                <p>OpenShift Twitch Public Feedback Form: <a href="https://red.ht/stream-feedback">https://red.ht/stream-feedback</a> (public, partners, customers, etc.)</p>
+                <p>Please read (and contribute to) the documentation: <a href="https://github.com/cloud-platforms-streaming/streaming-docs">https://github.com/cloud-platforms-streaming/streaming-docs</a></p>
+                <h2 id="-red-hat-openshift-twitch-https-www-twitch-tv-redhatopenshift-"><a href="https://www.twitch.tv/redhatopenshift">Red Hat OpenShift Twitch</a></h2>
+                <p>Please follow us on Twitch!</p>
+                <!-- Add a placeholder for the Twitch embed -->
+                <div id="twitch-embed"></div>
 
-      <footer>
-        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
-      </footer>
+                <!-- Load the Twitch embed script -->
+                <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+                <!-- Create a Twitch.Embed object. This will render within the placeholder div -->
+                <script type="text/javascript">
+                    new Twitch.Embed("twitch-embed", {
+                        width: 800,
+                        height: 450,
+                        channel: "redhatopenshift",
+                        layout: "video",
+                    });
+                </script>
+
+                <h2 id="-red-hat-openshift-youtube-https-www-youtube-com-c-openshift-live-"><a href="https://www.youtube.com/c/OpenShift/live">Red Hat OpenShift YouTube</a></h2>
+                <iframe width="800" height="450" src="https://www.youtube-nocookie.com/embed/_1N4xYd3nQE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                <h2 id="-red-hat-streaming-calendar-https-red-ht-streamcal-"><a href="https://red.ht/streamcal">Red Hat Streaming Calendar</a></h2>
+                <p>Note: Click the + in the bottom right of the Google Calender to add to your own calendar.</p>
+                <iframe src="https://calendar.google.com/calendar/embed?src=redhatstreaming%40gmail.com&ctz=America%2FDetroit" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+                <h3 id="red-hat-openshift-the-kubernetes-platform-for-big-ideas">Red Hat OpenShift: The Kubernetes platform for big ideas</h3>
+                <p>Want your own Call to Action (CTA) in our rotation? The <a href="https://github.com/cloud-platforms-streaming/streaming-tools/blob/master/obs/assets/openshift-banners.xcf">template for these banners</a> is available for modification. Submit
+                    a Pull Request with your new CTA asset and additional information about the campaign.</p>
+                <p>
+                    <a href="https://red.ht/DO101Free"><img src="https://github.com/cloud-platforms-streaming/streaming-tools/raw/master/obs/assets/free-do101.png" alt="DO101 Free!"></a>
+                </p>
+                <p>
+                    <a href="https://learn.openshift.com"><img src="https://github.com/cloud-platforms-streaming/streaming-tools/raw/master/obs/assets/learn-openshift-banner.png" alt="learn.openshift.com"></a>
+                </p>
+                <p>
+                    <a href="https://www.openshift.com/try"><img src="https://github.com/cloud-platforms-streaming/streaming-tools/raw/master/obs/assets/try-openshift-banner.png" alt="try.openshift.com"></a>
+                </p>
+
+
+            </div>
+        </div>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    {% if site.google_analytics %}
-      <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', '{{ site.google_analytics }}', 'auto');
-        ga('send', 'pageview');
-      </script>
-    {% endif %}
-  </body>
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer id="rh">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                    <img src="https://assets.openshift.com/hubfs/images/logos/Logo-RedHat-A-Reverse-RGB.svg" class="img-fluid" alt="Red Hat" style="height: 30px;">
+                </div>
+
+                <div class="col-sm-3">
+                    <p class="text-nowrap">Copyright © 2019 Red Hat, Inc.</span>
+                    </p>
+                </div>
+
+                <div class="col">
+                    <nav class="nav">
+                        <a target="_blank" href="https://www.redhat.com/en/about/privacy-policy" class="nav-link">Privacy statement</a>
+                        <a target="_blank" href="https://www.openshift.com/legal/terms/" class="nav-link">Terms of use</a>
+                        <a target="_blank" href="https://www.redhat.com/en/about/all-policies-guidelines" class="nav-link">All policies and guidelines</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Adobe DTM -->
+    <script type="text/javascript">
+        if (("undefined" !== typeof _satellite) && ("function" === typeof _satellite.pageBottom)) {
+            _satellite.pageBottom();
+        }
+    </script>
+    <!-- End Adobe DTM -->
+
+</body>
+
 </html>
