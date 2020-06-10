@@ -14,12 +14,14 @@
     <link rel="canonical" href="https://openshift.tv">
     <title>openshift.tv</title>
 
+    <link rel="stylesheet" href="//www.redhat.com/sites/all/libraries/webrh/dist/css/webrh.webcomponents.min.css">
+    <link rel="stylesheet" href="//static.redhat.com/libs/redhat/redhat-theme/latest/advanced-theme.css">
     <link href="https://assets.openshift.net/content/subdomain.css" rel="stylesheet" type="text/css">
     <link href="https://docs.openshift.com/container-platform/4.1/_stylesheets/docs.css" rel="stylesheet" />
     <link href="https://docs.openshift.com/container-platform/4.1/_stylesheets/search.css" rel="stylesheet" />
+    <link href="https://assets.openshift.net/content/osh-nav-footer.css" rel="stylesheet" type="text/css" media="screen, print" />
     <link href="https://assets.openshift.net/content/subdomain/touch-icon-precomposed.png" rel="apple-touch-icon-precomposed" type="image/png">
     <link href="https://assets.openshift.net/content/subdomain/favicon32x32.png" rel="shortcut icon" type="text/css">
-    <link href="https://assets.openshift.net/content/osh-nav-footer.css" rel="stylesheet" type="text/css" media="screen, print" />
     <!--[if IE]><link rel="shortcut icon" href="https://assets.openshift.net/content/subdomain/favicon.ico"><![endif]-->
     <!-- or, set /favicon.ico for IE10 win -->
     <meta content="OpenShift" name="application-name">
@@ -158,18 +160,13 @@
     <!-- END TOPNAV.HTML -->
 
     <div class="container">
-        <p class="toggle-nav visible-xs pull-left">
-            <button class="btn btn-default btn-sm" type="button" data-toggle="offcanvas">Toggle nav</button>
-        </p>
-
-
         <div class="col-xs-12 col-sm-9 col-md-9 main">
             <div class="page-header">
 
                 <h1 id="red-hat-openshift-streaming">Red Hat OpenShift Streaming</h1>
                 <h2 id="why">Why?</h2>
                 <p>Why live streaming? The COVID-19 pandemic has affected almost every event on the planet. We need a better way to connect to customers, partners, contributors, and communities. We have the capability to meet people where they are on
-                    <a href="https://www.youtube.com/rhopenshift">YouTube</a>, <a href="https://www.facebook.com/openshift/">Facebook</a>, or <a href="https://www.twitch.tv/redhatopenshift">Twitch</a>.</p>
+                    <a href="https://www.youtube.com/rhopenshift">YouTube</a>, <a href="https://www.facebook.com/openshift/">Facebook</a>, <a href="https://www.periscope.tv/openshift">Periscope</a>, or <a href="https://www.twitch.tv/redhatopenshift">Twitch</a>.</p>
                 <p>If you have questions, please review the <a href="https://red.ht/streamfaq">FAQ</a></p>
                 <h2 id="how">How?</h2>
                 <p>Want to get on the stream and hack on some fun Red Hat OpenShift, OpenShift adjacent, or related upstream projects? Fill out the appropriate submission form and we&#39;ll be in touch.</p>
@@ -213,7 +210,9 @@
                 <p>
                     <a href="https://www.openshift.com/try"><img src="https://github.com/cloud-platforms-streaming/streaming-tools/raw/master/obs/assets/try-openshift-banner.png" alt="try.openshift.com"></a>
                 </p>
-
+                <p>
+                    <a href="https://commons.openshift.org/"><img src="https://github.com/cloud-platforms-streaming/streaming-tools/raw/master/obs/assets/openshift-commons/OpenShiftCommons-700x125.png" alt="OpenShift Commons"></a>
+                </p>
 
             </div>
         </div>
@@ -225,20 +224,19 @@
     <footer id="rh">
         <div class="container">
             <div class="row">
-                <div class="col-sm-2">
-                    <img src="https://assets.openshift.com/hubfs/images/logos/Logo-RedHat-A-Reverse-RGB.svg" class="img-fluid" alt="Red Hat" style="height: 30px;">
+                <div class="col-md-2">
+                    <img src="https://www.openshift.com/hubfs/images/logos/Logo-RedHat-A-Reverse-RGB.svg" class="img-fluid" alt="Red Hat" style="height: 30px; margin-top: 5px;">
                 </div>
-
-                <div class="col-sm-3">
-                    <p class="text-nowrap">Copyright © 2019 Red Hat, Inc.</span>
-                    </p>
+                <div class="col-md-3">
+                    <p>Copyright © 2020 <span class="text-nowrap">Red Hat, Inc.</span></p>
                 </div>
-
                 <div class="col">
                     <nav class="nav">
-                        <a target="_blank" href="https://www.redhat.com/en/about/privacy-policy" class="nav-link">Privacy statement</a>
-                        <a target="_blank" href="https://www.openshift.com/legal/terms/" class="nav-link">Terms of use</a>
-                        <a target="_blank" href="https://www.redhat.com/en/about/all-policies-guidelines" class="nav-link">All policies and guidelines</a>
+                        <a href="https://www.redhat.com/en/about/privacy-policy" class="nav-link">Privacy statement</a>
+                        <a href="/legal/terms/?hsLang=en-us" class="nav-link">Terms of use</a>
+                        <a href="https://www.redhat.com/en/about/all-policies-guidelines" class="nav-link">All policies and guidelines</a>
+                        <span id="teconsent" style="line-height: 1.1;"></span>
+                        <a href="https://www.redhat.com/summit"><img src="https://www.openshift.com/hubfs/images/logos/Logo-Red_Hat-Summit-A-Standard-RGB-02.svg" alt="Red Hat Summit" style="float: right;" width="72"></a>
                     </nav>
                 </div>
             </div>
